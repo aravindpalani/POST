@@ -1,7 +1,7 @@
 # POST
 Drinking Water Treatment Plant Operations Smartphone Tracker
 
-PROGRAMMERS NEEDED! Help develop an app to improve drinking water quality in developing nations. AguaClara is a student-led project team that designs water treatment plants for Honduras. At AguaClara, we are building a Plant Operations Smartphone Tracker (POST) for tracking water quality data from our eleven rural treatment plants in Honduras. As part of the first AguaClara POST team, you will:
+PROGRAMMERS NEEDED! Help develop an app to improve drinking water quality in developing nations. [AguaClara](http://aguaclara.cee.cornell.edu/) is a student-led project team that designs water treatment plants for Honduras. At AguaClara, we are building a Plant Operations Smartphone Tracker (POST) for tracking water quality data from our eleven rural treatment plants in Honduras. As part of the first AguaClara POST team, you will:
 
 * Use the latest tools, including: NodeJS, Java, and MySQL
 * Help make critical design decisions that will affect the further development of POST for years to come
@@ -15,4 +15,4 @@ We are looking for interested CS, InfoSci, or EE students. The app will be built
 * Connect the app to a custom-built Bluetooth turbidimeter
 * Provide detailed recommendations for future improvements
 
-This project will become a core part of AguaClara technology and may eventually be used throughout the world to track water treatment plant operations. If you are interested in joining the team, please fill out this form. If you would like to learn more about the project, please visit the POST github site. Note: CS/EnvEng credit options are available. 
+This project will become a core part of AguaClara technology and may eventually be used throughout the world to track water treatment plant operations. If you are interested in joining the team, [please fill out this form](https://docs.google.com/forms/d/19mo-vKKWAcSXqZvqrZ69eTvnUQJEsOegicz0bY_IEeU/viewform). If you would like to learn more about the project, please visit the [POST github site](http://ethan92429.github.io/POST/). Note: CS/EnvEng credit options are available. 
