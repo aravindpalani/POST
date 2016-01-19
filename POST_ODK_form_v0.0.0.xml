@@ -1,0 +1,121 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>POST v0.0.0</h:title>
+    <model>
+      <instance>
+        <data id="POSTv0.0.0">
+          <meta>
+            <instanceID/>
+          </meta>
+          <plant_name/>
+          <operator_name/>
+          <flow_rate/>
+          <coagulant_dose/>
+          <raw_water_turbidity/>
+          <turbidimeter_photo/>
+          <settled_water_turbidity/>
+          <filtered_water_turbidity/>
+          <chlorine_dose/>
+          <comments/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/plant_name:label">
+            <value>Plant Name</value>
+          </text>
+          <text id="/data/plant_name:hint">
+            <value>Atima</value>
+          </text>
+          <text id="/data/operator_name:label">
+            <value>Operator Name</value>
+          </text>
+          <text id="/data/flow_rate:label">
+            <value>Flow Rate (L/s)</value>
+          </text>
+          <text id="/data/coagulant_dose:label">
+            <value>Coagulant Dose (mg/L)</value>
+          </text>
+          <text id="/data/coagulant_dose:hint">
+            <value></value>
+          </text>
+          <text id="/data/raw_water_turbidity:label">
+            <value>Raw Water Turbidity (NTU)</value>
+          </text>
+          <text id="/data/turbidimeter_photo:label">
+            <value>Photo of Turbidimeter</value>
+          </text>
+          <text id="/data/turbidimeter_photo:hint">
+            <value>select a photo of the turbidimeter screen</value>
+          </text>
+          <text id="/data/settled_water_turbidity:label">
+            <value>Settled Water Turbidity (NTU)</value>
+          </text>
+          <text id="/data/filtered_water_turbidity:label">
+            <value>Filtered Water Turbidity (NTU)</value>
+          </text>
+          <text id="/data/filtered_water_turbidity:hint">
+            <value></value>
+          </text>
+          <text id="/data/chlorine_dose:label">
+            <value>Chlorine Dose (mg/L)</value>
+          </text>
+          <text id="/data/comments:label">
+            <value>Comments</value>
+          </text>
+          <text id="/data/comments:hint">
+            <value>any additional information</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/plant_name" type="string" required="true()"/>
+      <bind nodeset="/data/operator_name" type="string"/>
+      <bind nodeset="/data/flow_rate" type="int"/>
+      <bind nodeset="/data/coagulant_dose" type="int"/>
+      <bind nodeset="/data/raw_water_turbidity" type="int"/>
+      <bind nodeset="/data/turbidimeter_photo" type="binary"/>
+      <bind nodeset="/data/settled_water_turbidity" type="int"/>
+      <bind nodeset="/data/filtered_water_turbidity" type="int"/>
+      <bind nodeset="/data/chlorine_dose" type="int"/>
+      <bind nodeset="/data/comments" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/plant_name">
+      <label ref="jr:itext('/data/plant_name:label')"/>
+      <hint ref="jr:itext('/data/plant_name:hint')"/>
+    </input>
+    <input ref="/data/operator_name">
+      <label ref="jr:itext('/data/operator_name:label')"/>
+    </input>
+    <input ref="/data/flow_rate">
+      <label ref="jr:itext('/data/flow_rate:label')"/>
+    </input>
+    <input ref="/data/coagulant_dose">
+      <label ref="jr:itext('/data/coagulant_dose:label')"/>
+      <hint ref="jr:itext('/data/coagulant_dose:hint')"/>
+    </input>
+    <input ref="/data/raw_water_turbidity">
+      <label ref="jr:itext('/data/raw_water_turbidity:label')"/>
+    </input>
+    <upload ref="/data/turbidimeter_photo" mediatype="image/*">
+      <label ref="jr:itext('/data/turbidimeter_photo:label')"/>
+      <hint ref="jr:itext('/data/turbidimeter_photo:hint')"/>
+    </upload>
+    <input ref="/data/settled_water_turbidity">
+      <label ref="jr:itext('/data/settled_water_turbidity:label')"/>
+    </input>
+    <input ref="/data/filtered_water_turbidity">
+      <label ref="jr:itext('/data/filtered_water_turbidity:label')"/>
+      <hint ref="jr:itext('/data/filtered_water_turbidity:hint')"/>
+    </input>
+    <input ref="/data/chlorine_dose">
+      <label ref="jr:itext('/data/chlorine_dose:label')"/>
+    </input>
+    <input ref="/data/comments">
+      <label ref="jr:itext('/data/comments:label')"/>
+      <hint ref="jr:itext('/data/comments:hint')"/>
+    </input>
+  </h:body>
+</h:html>
